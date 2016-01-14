@@ -12,7 +12,8 @@ public class JSimulator {
 	JPanel pnlSecond = new JPanel();
 	CardLayout cardLayout = new CardLayout();
 
-	private final JButton goToPanelTwo = new JButton("Panel2");
+	// ButtonsPanelOne
+	private final JButton goToPanelTwo = new JButton("GoToPanel 2");
 	private final JButton button = new JButton("New button");
 	private final JButton button_1 = new JButton("New button");
 	private final JButton button_2 = new JButton("New button");
@@ -28,23 +29,37 @@ public class JSimulator {
 	private final JButton button_12 = new JButton("New button");
 	private final JButton button_13 = new JButton("New button");
 	private final JButton button_14 = new JButton("New button");
-	private final JButton goToPanelOne = new JButton("Go back");
+
+	// ButtonsPanelTwo
+	private final JButton goToPanelOne = new JButton("GoToPanel 1");
+	private final JButton p2Button = new JButton("New button");
+	private final JButton p2Button_1 = new JButton("New button");
+	private final JButton p2Button_2 = new JButton("New button");
+	private final JButton p2Button_3 = new JButton("New button");
+	private final JButton p2Button_4 = new JButton("New button");
+	private final JButton p2Button_5 = new JButton("New button");
+	private final JButton p2Button_6 = new JButton("New button");
+	private final JButton p2Button_7 = new JButton("New button");
+	private final JButton p2Button_8 = new JButton("New button");
+	private final JButton p2Button_9 = new JButton("New button");
+	private final JButton p2Button_10 = new JButton("New button");
+	private final JButton p2Button_11 = new JButton("New button");
+	private final JButton p2Button_12 = new JButton("New button");
+	private final JButton p2Button_13 = new JButton("New button");
+	private final JButton p2Button_14 = new JButton("New button");
 
 	public JSimulator() {
 
 		panel.setLayout(cardLayout);
 
-		pnlOne.setBackground(Color.YELLOW);
-
 		pnlOne.setLayout(null);
 		JLabel label = new JLabel("This is first panel");
-		label.setBounds(272, 5, 80, 14);
+		label.setBounds(250, 5, 80, 14);
 		pnlOne.add(label);
 
-		pnlSecond.setBackground(Color.GREEN);
 		pnlSecond.setLayout(null);
 		JLabel label_1 = new JLabel("This is second panel");
-		label_1.setBounds(264, 5, 95, 14);
+		label_1.setBounds(250, 5, 95, 14);
 		pnlSecond.add(label_1);
 
 		// Add panels and set constraints.
@@ -102,26 +117,41 @@ public class JSimulator {
 
 	public void setButtonsBoundsPanelOne() {
 
-		goToPanelTwo.setBounds(0, 366, 130, 36);
-		button_1.setBounds(280, 366, 130, 36);
-		button.setBounds(140, 366, 130, 36);
-		button_2.setBounds(420, 366, 130, 36);
-		button_3.setBounds(0, 305, 50, 50);
-		button_4.setBounds(0, 244, 50, 50);
-		button_5.setBounds(0, 183, 50, 50);
-		button_6.setBounds(0, 122, 50, 50);
-		button_7.setBounds(0, 61, 50, 50);
-		button_8.setBounds(0, 0, 50, 50);
-		button_9.setBounds(500, 305, 50, 50);
-		button_10.setBounds(500, 244, 50, 50);
-		button_11.setBounds(500, 183, 50, 50);
-		button_12.setBounds(500, 122, 50, 50);
-		button_13.setBounds(500, 61, 50, 50);
-		button_14.setBounds(500, 0, 50, 50);
+		goToPanelTwo.setBounds(0, 400, 130, 36);
+		button_1.setBounds(280, 400, 130, 36);
+		button.setBounds(140, 400, 130, 36);
+		button_2.setBounds(420, 400, 130, 36);
+		button_3.setBounds(0, 339, 50, 50);
+		button_4.setBounds(0, 278, 50, 50);
+		button_5.setBounds(0, 217, 50, 50);
+		button_6.setBounds(0, 156, 50, 50);
+		button_7.setBounds(0, 95, 50, 50);
+		button_8.setBounds(0, 34, 50, 50);
+		button_9.setBounds(500, 339, 50, 50);
+		button_10.setBounds(500, 278, 50, 50);
+		button_11.setBounds(500, 217, 50, 50);
+		button_12.setBounds(500, 156, 50, 50);
+		button_13.setBounds(500, 95, 50, 50);
+		button_14.setBounds(500, 34, 50, 50);
 	}
 
 	public void setButtonsBoundsPanelTwo() {
-		goToPanelOne.setBounds(264, 216, 89, 23);
+		goToPanelOne.setBounds(0, 400, 130, 36);
+		p2Button_1.setBounds(280, 400, 130, 36);
+		p2Button.setBounds(140, 400, 130, 36);
+		p2Button_2.setBounds(420, 400, 130, 36);
+		p2Button_3.setBounds(0, 339, 50, 50);
+		p2Button_4.setBounds(0, 278, 50, 50);
+		p2Button_5.setBounds(0, 217, 50, 50);
+		p2Button_6.setBounds(0, 156, 50, 50);
+		p2Button_7.setBounds(0, 95, 50, 50);
+		p2Button_8.setBounds(0, 34, 50, 50);
+		p2Button_9.setBounds(500, 339, 50, 50);
+		p2Button_10.setBounds(500, 278, 50, 50);
+		p2Button_11.setBounds(500, 217, 50, 50);
+		p2Button_12.setBounds(500, 156, 50, 50);
+		p2Button_13.setBounds(500, 95, 50, 50);
+		p2Button_14.setBounds(500, 34, 50, 50);
 	}
 
 	public void addButtonsToPanelOne() {
@@ -146,6 +176,21 @@ public class JSimulator {
 
 	public void addButtonsToPanelTwo() {
 		pnlSecond.add(goToPanelOne);
+		pnlSecond.add(p2Button);
+		pnlSecond.add(p2Button_1);
+		pnlSecond.add(p2Button_2);
+		pnlSecond.add(p2Button_3);
+		pnlSecond.add(p2Button_4);
+		pnlSecond.add(p2Button_5);
+		pnlSecond.add(p2Button_6);
+		pnlSecond.add(p2Button_7);
+		pnlSecond.add(p2Button_8);
+		pnlSecond.add(p2Button_9);
+		pnlSecond.add(p2Button_10);
+		pnlSecond.add(p2Button_11);
+		pnlSecond.add(p2Button_12);
+		pnlSecond.add(p2Button_13);
+		pnlSecond.add(p2Button_14);
 	}
 
 }
